@@ -291,12 +291,13 @@ textarea {
   width: 100%; }
 
 /*==================================
-	GENERAL ELEMENTS
+	HERO ELEMENTS
 ====================================*/
 .hero-wrapper {
   background: url("../img/hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
   height: 100%;
   width: 100%; }
   .hero-wrapper .hero-info {
@@ -305,12 +306,18 @@ textarea {
     transform: translateY(-50%);
     position: relative;
     color: white;
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto; }
     .hero-wrapper .hero-info h1 {
       margin-top: 0;
       color: white;
       font-family: "proxima_bold"; }
+
+/*==================================
+	ABOUT ELEMENTS
+====================================*/
+.about-wrapper {
+  max-width: 650px; }
 
 /*==================================
 	@fonts
