@@ -317,7 +317,8 @@ textarea {
 	ABOUT ELEMENTS
 ====================================*/
 .about-wrapper {
-  max-width: 750px; }
+  max-width: 750px;
+  display: block; }
 
 /*==================================
 	@fonts
