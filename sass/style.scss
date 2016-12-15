@@ -341,8 +341,32 @@ textarea {
 }
 
 /*==================================
-	
+	GENERAL ELEMENTS
 ====================================*/
+
+.hero-wrapper {
+	background:url('../img/hero.jpg');
+	background-size: cover;
+	background-repeat:no-repeat;
+	height:100%;
+	width:100%;
+
+	.hero-info {
+		text-align: center;
+		top:50%;
+		transform:translateY(-50%);
+		position:relative;
+		color: white;
+		max-width: 400px;
+		margin:0 auto;
+
+		h1 {
+			margin-top:0;
+			color:white;
+			font-family: $proxima-bold;
+		}
+	}
+}
 
 /*==================================
 	@fonts
