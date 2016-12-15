@@ -1,57 +1,356 @@
+/*================================
+	SASS/BASE TEMPLATE
+==================================
+	Description:
+	Author:
+	Author URL: http://www.billykabuubi.com
 /*
-Error: Invalid CSS after "	max-width:": expected expression (e.g. 1px, bold), was "}"
-        on line 378 of style.scss
 
-373: 	ABOUT ELEMENTS
-374: ====================================*\/
-375: 
-376: .about-wrapper {
-377: 	max-width:
-378: }
-379: 
-380: /*==================================
-381: 	@fonts
-382: ====================================*\/
-383: 
-
-Backtrace:
-style.scss:378
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:1162:in `expected'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.18/lib/sass/script/lexer.rb:221:in `expected!'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.18/lib/sass/script/parser.rb:571:in `assert_expr'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.18/lib/sass/script/parser.rb:62:in `parse'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:1024:in `sass_script'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:877:in `value!'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:750:in `block in try_declaration'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:1138:in `call'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:1138:in `rethrow'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:763:in `try_declaration'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:693:in `declaration_or_ruleset'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:658:in `block_child'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:647:in `block_contents'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:639:in `block'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:632:in `ruleset'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:657:in `block_child'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:650:in `block_contents'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:117:in `stylesheet'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:42:in `parse'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.18/lib/sass/engine.rb:403:in `_to_tree'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.18/lib/sass/engine.rb:378:in `_render_with_sourcemap'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.18/lib/sass/engine.rb:295:in `render_with_sourcemap'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:328:in `block in watch'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.18/vendor/listen/lib/listen/listener.rb:252:in `call'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.18/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.18/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.18/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.18/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.18/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+/*
+==================================
+	SMACSS STRUCTURE (sass)
+==================================
+    - Bourbon
+    	- Bourbon
+    - Base
+    	- Font
+    	- Typography
+    - Helpers
+    	- Mixins
+    	- Variables
+    - Modules
+    	- ...
+==================================
+	DOCUMENT STRUCTURE
+==================================
+    - CSS Reset
+    - HTML5 Reset
+    - Global
+        - Buttons
+        - Form Elements
+        - HTML5 Reset
+    	- Base Elements
+    	- Link Elements
+    	- Build elements
+    - Build Elements
+    	-
+    	-
+    - @fonts
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"	max-width:\": expected expression (e.g. 1px, bold), was \"}\"\A         on line 378 of style.scss\A \A 373: 	ABOUT ELEMENTS\A 374: ====================================*/\A 375: \A 376: .about-wrapper {\A 377: 	max-width:\A 378: }\A 379: \A 380: /*==================================\A 381: 	@fonts\A 382: ====================================*/\A 383: "; }
+.btn {
+  padding: 15px 25px;
+  position: relative;
+  text-align: center;
+  font-size: 1em;
+  font-family: "proxima_bold", sans-serif, Arial, Helvetica;
+  margin: 2em auto;
+  text-align: center;
+  display: block;
+  letter-spacing: 0.1em; }
+
+/*==================================
+	CSS RESET
+====================================*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+address, caption, cite, code, dfn, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+ol, ul {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+q:before, q:after {
+  content: ''; }
+
+abbr, acronym {
+  border: 0; }
+
+/*==================================
+	HTML5 RESET
+====================================*/
+article, aside, dialog, figure, footer, header, hgroup, nav, section {
+  display: block;
+  zoom: 1; }
+
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+/*==================================
+	GLOBAL
+====================================*/
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font-size: 100%;
+  height: 100%;
+  font-family: sans-serif, Arial, Helvetica;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+body {
+  font-family: "proxima_light", sans-serif, Arial, Helvetica;
+  color: #222;
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  margin: 0; }
+
+.container {
+  margin: 0 auto;
+  width: 96%; }
+  @media only screen and (min-width: 73.125em) {
+    .container {
+      max-width: 73.125em;
+      margin: 0 auto;
+      width: 100%; } }
+
+.row {
+  overflow: hidden; }
+
+/*==================================
+	BASE STYLES
+====================================*/
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+.h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a {
+  color: inherit; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: #444;
+  font-family: "proxima_bold", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 1em 0; }
+
+h1, .h1 {
+  font-size: 2em; }
+
+h2, .h2 {
+  font-size: 1.6em; }
+
+h3, .h3 {
+  font-size: 1.4em; }
+
+h4, .h4 {
+  font-size: 1.3em; }
+
+h5, .h5 {
+  font-size: 1.25em; }
+
+h6, .h6 {
+  font-size: 1.2em; }
+
+small {
+  font-size: 0.85em; }
+
+ul li {
+  list-style: none; }
+
+ol li {
+  list-style: none; }
+
+strong, b {
+  font-weight: bold; }
+
+em, i {
+  font-style: italic; }
+
+p {
+  margin-bottom: 1em;
+  text-align: center; }
+
+img, object, embed {
+  height: auto;
+  max-width: 100%; }
+
+blockquote {
+  font-size: 1.1em;
+  font-style: italic;
+  margin: 0 0 1.250em 1.250em;
+  padding: 0.625em 1.250em 1.250em; }
+
+blockquote p:last-child {
+  margin-bottom: 0; }
+
+/*==================================
+	LINK ELEMENTS
+====================================*/
+a {
+  cursor: pointer;
+  color: inherit;
+  outline: 0;
+  text-decoration: none; }
+
+a:focus {
+  outline: none; }
+
+/* Improve readability */
+a:hover, a:active {
+  outline: 0; }
+
+::selection {
+  color: white; }
+
+/*==================================
+	BUTTONS
+====================================*/
+a.button {
+  display: inline-block;
+  float: left;
+  margin-bottom: 0.625em;
+  outline: 0 none;
+  padding: 0.438em 0.938em;
+  width: auto;
+  border-radius: 0.188em; }
+
+a.button:hover {
+  text-decoration: none; }
+
+a.button:active {
+  opacity: 0.9; }
+
+a.button-full-width {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  text-align: center;
+  width: 100%; }
+
+/* Fix for odd Mozilla border & padding issues */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/*==================================
+	FORM ELEMENTS
+====================================*/
+input,
+textarea {
+  display: block;
+  font-size: 1em;
+  padding: 0.375em 1%;
+  margin: 0;
+  margin-bottom: 1.250em;
+  outline: none;
+  width: 100%;
+  border-radius: 0.125em; }
+
+input[type=submit] {
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.438em 0.938em;
+  width: auto; }
+
+input {
+  max-width: 12.500em; }
+
+textarea {
+  max-width: 25.000em; }
+
+.hide {
+  display: none; }
+
+.text-align {
+  text-align: center; }
+
+.align-center {
+  margin: 0 auto;
+  display: block;
+  clear: both;
+  width: 100%; }
+
+/*==================================
+	BUILD ELEMENTS
+====================================*/
+.sitewrap {
+  height: 100%;
+  width: 100%; }
+
+/*==================================
+	HERO ELEMENTS
+====================================*/
+.hero-wrapper {
+  background: url("../img/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+  width: 100%; }
+  .hero-wrapper .hero-info {
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+    color: white;
+    max-width: 600px;
+    margin: 0 auto; }
+    .hero-wrapper .hero-info h1 {
+      margin-top: 0;
+      color: white;
+      font-family: "proxima_bold"; }
+
+/*==================================
+	ABOUT ELEMENTS
+====================================*/
+.about-wrapper {
+  max-width: 700px; }
+
+/*==================================
+	@fonts
+====================================*/
+@font-face {
+  font-family: 'proxima_light';
+  src: url("../fonts/proxima-nova/proxima_nova_light-webfont.eot");
+  src: url("../fonts/proxima-nova/proxima_nova_light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima-nova/proxima_nova_light-webfont.woff") format("woff"), url("../fonts/proxima-nova/proxima_nova_light-webfont.ttf") format("truetype"), url("../fonts/proxima-nova/proxima_nova_light-webfont.svg#proxima_nova_ltlight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'proxima_bold';
+  src: url("../fonts/proxima-nova/proxima_nova_alt_bold-webfont.eot");
+  src: url("../fonts/proxima-nova/proxima_nova_alt_bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima-nova/proxima_nova_alt_bold-webfont.woff") format("woff"), url("../fonts/proxima-nova/proxima_nova_alt_bold-webfont.ttf") format("truetype"), url("../fonts/proxima-nova/proxima_nova_alt_bold-webfont.svg#proxima_nova_alt_rgbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'proxima_black';
+  src: url("../fonts/proxima-nova/proxima_nova_alt_black-webfont.eot");
+  src: url("../fonts/proxima-nova/proxima_nova_alt_black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima-nova/proxima_nova_alt_black-webfont.woff") format("woff"), url("../fonts/proxima-nova/proxima_nova_alt_black-webfont.ttf") format("truetype"), url("../fonts/proxima-nova/proxima_nova_alt_black-webfont.svg#proxima_nova_altblack") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'brandon_bold';
+  src: url("../fonts/brandon/brandon_bld-webfont.eot");
+  src: url("../fonts/brandon/brandon_bld-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon/brandon_bld-webfont.woff") format("woff"), url("../fonts/brandon/brandon_bld-webfont.ttf") format("truetype"), url("../fonts/brandon/brandon_bld-webfont.svg#brandon_bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'brandon_light';
+  src: url("../fonts/brandon/brandon_light-webfont.eot");
+  src: url("../fonts/brandon/brandon_light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon/brandon_light-webfont.woff") format("woff"), url("../fonts/brandon/brandon_light-webfont.ttf") format("truetype"), url("../fonts/brandon/brandon_light-webfont.svg#brandon_light") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/*# sourceMappingURL=style.css.map */
