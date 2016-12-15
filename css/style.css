@@ -111,12 +111,11 @@ html {
 
 body {
   font-family: "proxima_light", sans-serif, Arial, Helvetica;
-  color: #666;
-  background: #F7F5F5;
+  color: #222;
+  background: #fff;
   height: 100%;
   width: 100%;
-  font-size: 1em;
-  line-height: 1.4;
+  font-size: 100%;
   margin: 0; }
 
 .container {
