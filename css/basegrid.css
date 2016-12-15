@@ -1,0 +1,126 @@
+/*********************************************
+    - 4.0 -  GRID STYLES
+*********************************************/
+
+    .one_four, .two_four, .three_four, .four_four,
+    .one_three, .two_three, .three_three,
+    .one_two, .two_two,
+    .two_third, .one_third {
+        float: left;
+        overflow: hidden;
+        padding: 1px 0.5%;
+    }
+
+    .one_four, .two_four, .three_four, .four_four,
+    .one_three, .two_three, .three_three,
+    .one_two, .two_two,
+    .two_third, .one_third {
+        float: left;
+        margin-bottom: 0.625em;
+        margin-left: 0%;
+        width: 100%;
+    }
+
+
+    /* - 4.1. - WIDE MOBILE
+    ------------------------------------------ */
+
+    @media only screen and (min-width: 30em) {
+
+    }
+
+
+    /* - 4.2. - TABLET
+    ------------------------------------------ */
+
+    @media only screen and (min-width: 48em) {
+        .one_four, .two_four, .three_four, .four_four,
+        .one_three, .two_three, .three_three,
+        .one_two, .two_two,
+        .two_third, .one_third {
+            float: left;
+            margin-bottom: 0.625em;
+            margin-left: 4%;
+        }
+
+        .one_four, .two_four, .three_four, .four_four {
+            width: 22%;
+        }
+
+        .one_four {
+            margin-left: 0%;
+        }
+
+        .one_three, .two_three, .three_three {
+            width: 30.66667%;
+        }
+
+        .one_three {
+            margin-left: 0;
+        }
+
+        .one_two, .two_two {
+            width: 48%;
+        }
+
+        .one_two {
+            margin-left: 0;
+        }
+
+        .two_third {
+            margin-left: 0;
+            width: 65%;
+        }
+
+        .one_third {
+            width: 31%;
+        }
+    }
+
+
+    /* - 4.3. - DESKTOP
+    ------------------------------------------ */
+
+    @media only screen and (min-width: 73.125em) {
+        .one_four, .two_four, .three_four, .four_four,
+        .one_three, .two_three, .three_three,
+        .one_two, .two_two,
+        .two_third, .one_third {
+            margin-bottom: 0.625em;
+            margin-left: 1.875em;
+        }
+
+        .one_four, .two_four, .three_four, .four_four {
+            width: 16.875em;
+        }
+
+        .one_four {
+            margin-left: 0;
+        }
+
+        .one_three, .two_three, .three_three {
+            width: 23.125em;
+        }
+
+        .one_three {
+            margin-left: 0;
+        }
+
+        .one_two, .two_two {
+            width: 35.625em;
+        }
+
+        .one_two {
+            margin-left: 0;
+        }
+
+        .two_third {
+            margin-left: 0;
+            width: 48.125em;
+        }
+
+        .one_third {
+            width: 23.125em;
+        }
+    }
+

@@ -1,0 +1,331 @@
+/*================================
+	SASS/BASE TEMPLATE
+==================================
+	Description:
+	Author:
+	Author URL: http://www.billykabuubi.com
+/*
+
+/*
+==================================
+	SMACSS STRUCTURE (sass)
+==================================
+    - Bourbon
+    	- Bourbon
+    - Base
+    	- Font
+    	- Typography
+    - Helpers
+    	- Mixins
+    	- Variables
+    - Modules
+    	- ...
+==================================
+	DOCUMENT STRUCTURE
+==================================
+    - CSS Reset
+    - HTML5 Reset
+    - Global
+        - Buttons
+        - Form Elements
+        - HTML5 Reset
+    	- Base Elements
+    	- Link Elements
+    	- Build elements
+    - Build Elements
+    	-
+    	-
+    - @fonts
+*/
+.btn {
+  padding: 15px 25px;
+  position: relative;
+  text-align: center;
+  font-size: 1em;
+  font-family: "proxima_bold", sans-serif, Arial, Helvetica;
+  margin: 2em auto;
+  text-align: center;
+  display: block;
+  letter-spacing: 0.1em; }
+
+/*==================================
+	CSS RESET
+====================================*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+address, caption, cite, code, dfn, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+ol, ul {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+q:before, q:after {
+  content: ''; }
+
+abbr, acronym {
+  border: 0; }
+
+/*==================================
+	HTML5 RESET
+====================================*/
+article, aside, dialog, figure, footer, header, hgroup, nav, section {
+  display: block;
+  zoom: 1; }
+
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+/*==================================
+	GLOBAL
+====================================*/
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font-size: 100%;
+  height: 100%;
+  font-family: sans-serif, Arial, Helvetica;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+body {
+  font-family: "proxima_light", sans-serif, Arial, Helvetica;
+  color: #666;
+  background: #F7F5F5;
+  height: 100%;
+  width: 100%;
+  font-size: 1em;
+  line-height: 1.4;
+  margin: 0; }
+
+.container {
+  margin: 0 auto;
+  width: 96%; }
+  @media only screen and (min-width: 73.125em) {
+    .container {
+      max-width: 73.125em;
+      margin: 0 auto;
+      width: 100%; } }
+
+.row {
+  overflow: hidden; }
+
+/*==================================
+	BASE STYLES
+====================================*/
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+.h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a {
+  color: inherit; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: #444;
+  font-family: "proxima_bold", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 1em 0; }
+
+h1, .h1 {
+  font-size: 2em; }
+
+h2, .h2 {
+  font-size: 1.6em; }
+
+h3, .h3 {
+  font-size: 1.4em; }
+
+h4, .h4 {
+  font-size: 1.3em; }
+
+h5, .h5 {
+  font-size: 1.25em; }
+
+h6, .h6 {
+  font-size: 1.2em; }
+
+small {
+  font-size: 0.85em; }
+
+ul li {
+  list-style: none; }
+
+ol li {
+  list-style: none; }
+
+strong, b {
+  font-weight: bold; }
+
+em, i {
+  font-style: italic; }
+
+p {
+  margin-bottom: 1em;
+  text-align: center; }
+
+img, object, embed {
+  height: auto;
+  max-width: 100%; }
+
+blockquote {
+  font-size: 1.1em;
+  font-style: italic;
+  margin: 0 0 1.250em 1.250em;
+  padding: 0.625em 1.250em 1.250em; }
+
+blockquote p:last-child {
+  margin-bottom: 0; }
+
+/*==================================
+	LINK ELEMENTS
+====================================*/
+a {
+  cursor: pointer;
+  color: inherit;
+  outline: 0;
+  text-decoration: none; }
+
+a:focus {
+  outline: none; }
+
+/* Improve readability */
+a:hover, a:active {
+  outline: 0; }
+
+::selection {
+  color: white; }
+
+/*==================================
+	BUTTONS
+====================================*/
+a.button {
+  display: inline-block;
+  float: left;
+  margin-bottom: 0.625em;
+  outline: 0 none;
+  padding: 0.438em 0.938em;
+  width: auto;
+  border-radius: 0.188em; }
+
+a.button:hover {
+  text-decoration: none; }
+
+a.button:active {
+  opacity: 0.9; }
+
+a.button-full-width {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  text-align: center;
+  width: 100%; }
+
+/* Fix for odd Mozilla border & padding issues */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/*==================================
+	FORM ELEMENTS
+====================================*/
+input,
+textarea {
+  display: block;
+  font-size: 1em;
+  padding: 0.375em 1%;
+  margin: 0;
+  margin-bottom: 1.250em;
+  outline: none;
+  width: 100%;
+  border-radius: 0.125em; }
+
+input[type=submit] {
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.438em 0.938em;
+  width: auto; }
+
+input {
+  max-width: 12.500em; }
+
+textarea {
+  max-width: 25.000em; }
+
+.hide {
+  display: none; }
+
+.text-align {
+  text-align: center; }
+
+.align-center {
+  margin: 0 auto;
+  display: block;
+  clear: both;
+  width: 100%; }
+
+/*==================================
+	BUILD ELEMENTS
+====================================*/
+.sitewrap {
+  height: 100%;
+  width: 100%; }
+
+/*==================================
+	
+====================================*/
+/*==================================
+	@fonts
+====================================*/
+@font-face {
+  font-family: 'proxima_light';
+  src: url("../fonts/proxima-nova/proxima_nova_light-webfont.eot");
+  src: url("../fonts/proxima-nova/proxima_nova_light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima-nova/proxima_nova_light-webfont.woff") format("woff"), url("../fonts/proxima-nova/proxima_nova_light-webfont.ttf") format("truetype"), url("../fonts/proxima-nova/proxima_nova_light-webfont.svg#proxima_nova_ltlight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'proxima_bold';
+  src: url("../fonts/proxima-nova/proxima_nova_alt_bold-webfont.eot");
+  src: url("../fonts/proxima-nova/proxima_nova_alt_bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima-nova/proxima_nova_alt_bold-webfont.woff") format("woff"), url("../fonts/proxima-nova/proxima_nova_alt_bold-webfont.ttf") format("truetype"), url("../fonts/proxima-nova/proxima_nova_alt_bold-webfont.svg#proxima_nova_alt_rgbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'proxima_black';
+  src: url("../fonts/proxima-nova/proxima_nova_alt_black-webfont.eot");
+  src: url("../fonts/proxima-nova/proxima_nova_alt_black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima-nova/proxima_nova_alt_black-webfont.woff") format("woff"), url("../fonts/proxima-nova/proxima_nova_alt_black-webfont.ttf") format("truetype"), url("../fonts/proxima-nova/proxima_nova_alt_black-webfont.svg#proxima_nova_altblack") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'brandon_bold';
+  src: url("../fonts/brandon/brandon_bld-webfont.eot");
+  src: url("../fonts/brandon/brandon_bld-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon/brandon_bld-webfont.woff") format("woff"), url("../fonts/brandon/brandon_bld-webfont.ttf") format("truetype"), url("../fonts/brandon/brandon_bld-webfont.svg#brandon_bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'brandon_light';
+  src: url("../fonts/brandon/brandon_light-webfont.eot");
+  src: url("../fonts/brandon/brandon_light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon/brandon_light-webfont.woff") format("woff"), url("../fonts/brandon/brandon_light-webfont.ttf") format("truetype"), url("../fonts/brandon/brandon_light-webfont.svg#brandon_light") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/*# sourceMappingURL=style.css.map */
