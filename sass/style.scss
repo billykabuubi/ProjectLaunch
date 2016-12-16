@@ -130,8 +130,6 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-	color: #444;
-	font-family: $proxima-bold, $font-fallback; 
   	text-transform: uppercase;
   	text-align:center;
 	margin: 1em 0;
@@ -183,6 +181,7 @@ em, i {
 
 p {
 	margin-bottom: 1em;
+	font-size: 1.2em;
 	text-align: center;
 }
 
@@ -346,9 +345,11 @@ textarea {
 
 .hero-wrapper {
 	background:url('../img/hero.jpg');
+	background-attachment:scro;
 	background-size: cover;
 	background-repeat:no-repeat;
 	background-position:center center;
+	font-family: $brandon-bold;
 	height:100%;
 	width:100%;
 
@@ -358,13 +359,25 @@ textarea {
 		transform:translateY(-50%);
 		position:relative;
 		color: white;
-		max-width: 600px;
+		max-width: 800px;
 		margin:0 auto;
 
 		h1 {
 			margin-top:0;
 			color:white;
-			font-family: $proxima-bold;
+			font-size:1.85em;
+		}
+
+		.btn-more {
+			border:2px solid white;
+			border-radius:3px;
+			display: inline-block;
+
+			&:last-child {
+				margin-left:5px;
+				background:white;
+				color:#222;
+			}
 		}
 	}
 }
@@ -374,8 +387,13 @@ textarea {
 ====================================*/
 
 .about-wrapper {
-	max-width:750px;
-	display:block;
+	max-width:800px;
+	font-family: $brandon-bold;
+	margin:7em auto;
+
+	p {
+		line-height: 1.7em;
+	}
 }
 
 /*==================================
