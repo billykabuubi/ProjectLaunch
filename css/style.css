@@ -293,8 +293,8 @@ textarea {
 	HERO ELEMENTS
 ====================================*/
 .hero-wrapper {
-  background: url("../img/hero.jpg");
-  background-attachment: scro;
+  background: url("../img/hero_03.jpg");
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -330,7 +330,9 @@ textarea {
   font-family: "brandon_bold";
   margin: 7em auto; }
   .about-wrapper p {
-    line-height: 1.7em; }
+    line-height: 1.8em;
+    font-family: "brandon_light";
+    font-weight: 600; }
 
 /*==================================
 	@fonts

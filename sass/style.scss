@@ -344,8 +344,8 @@ textarea {
 ====================================*/
 
 .hero-wrapper {
-	background:url('../img/hero.jpg');
-	background-attachment:scro;
+	background:url('../img/hero_03.jpg');
+	background-attachment:fixed;
 	background-size: cover;
 	background-repeat:no-repeat;
 	background-position:center center;
@@ -392,7 +392,9 @@ textarea {
 	margin:7em auto;
 
 	p {
-		line-height: 1.7em;
+		line-height: 1.8em;
+		font-family:$brandon-light;
+		font-weight: 600;
 	}
 }
 
