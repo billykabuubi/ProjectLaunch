@@ -345,12 +345,12 @@ textarea {
 ====================================*/
 
 .hero-wrapper {
-	background-image:url('../img/hero2.jpg');
+	background-image:url('../img/hero.jpg');
 	background-attachment:fixed;
 	background-size: cover;
 	background-repeat:no-repeat;
 	background-position:center center;
-	font-family: $playfair;
+	font-family: $coro;
 	height:100%;
 	width:100%;
 
@@ -389,14 +389,17 @@ textarea {
 		h1 {
 			margin-top:0;
 			color:white;
-			font-family:$playfair;
+			font-family:$coro;
 			text-transform: none;
-			font-size:2.6em;
+			font-size:2.8em;
+			font-weight:400;
 			line-height: 1.5em;
 		}
 
 		p {
-			font-size:1.3em;
+			font-size:1.5em;
+			font-weight:300;
+			font-family:$coro;
 		}
 
 		.btn-hero {
@@ -419,13 +422,53 @@ textarea {
 
 .about-wrapper {
 	max-width:800px;
-	font-family: $playfair;
+	font-family: $coro;
 	margin:7em auto;
+	padding:3em 1em;
 
 	p {
-		line-height: 1.8em;
-		font-family:$playfair;
+		line-height: 2.5em;
+		font-weight:500;
+		font-family:$coro;
+		font-size:1.6em;
+	}
+}
+
+/*==================================
+	WORK ELEMENTS
+====================================*/
+.work-block {
+
+	h1 {
+		font-family: $coro;
 		font-weight: 600;
+		font-size:1.5em;
+		text-transform: none;
+		margin-bottom:2em;
+	}
+
+	img {
+		width:1100px;
+		margin:4em auto;
+		display: block;
+	}
+
+	.btn-work {
+		background:rgb(82, 125, 198);
+		color:white !important;
+		padding: 18px 30px;
+		border-radius:60px;
+		margin: 4em auto;
+	    max-width: 200px;
+	    display: none;
+	    clear:both;
+
+		&:hover, &:active, &:active {
+			color:white;
+			background:rgb(40, 99, 199);
+			box-shadow: 0px 0px 60px 10px rgba(0, 0, 0, 0.15);
+			transition:all 200ms ease-in;
+		}
 	}
 }
 

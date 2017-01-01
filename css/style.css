@@ -44,8 +44,8 @@
   font-size: 1em;
   font-family: "proxima_bold", sans-serif, Arial, Helvetica;
   margin: 2em auto;
-  text-align: center;
   display: block;
+  text-transform: uppercase;
   letter-spacing: 0.1em; }
 
 .btn-hero-bg, .hero-wrapper .hero-info .btn-hero {
@@ -304,12 +304,12 @@ textarea {
 	HERO ELEMENTS
 ====================================*/
 .hero-wrapper {
-  background-image: url("../img/hero2.jpg");
+  background-image: url("../img/hero.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  font-family: "Playfair Display";
+  font-family: "Cormorant Garamond";
   height: 100%;
   width: 100%; }
   .hero-wrapper nav {
@@ -340,12 +340,15 @@ textarea {
     .hero-wrapper .hero-info h1 {
       margin-top: 0;
       color: white;
-      font-family: "Playfair Display";
+      font-family: "Cormorant Garamond";
       text-transform: none;
-      font-size: 2.6em;
+      font-size: 2.8em;
+      font-weight: 400;
       line-height: 1.5em; }
     .hero-wrapper .hero-info p {
-      font-size: 1.3em; }
+      font-size: 1.5em;
+      font-weight: 300;
+      font-family: "Cormorant Garamond"; }
     .hero-wrapper .hero-info .btn-hero {
       display: inline-block;
       color: white;
@@ -361,12 +364,42 @@ textarea {
 ====================================*/
 .about-wrapper {
   max-width: 800px;
-  font-family: "Playfair Display";
-  margin: 7em auto; }
+  font-family: "Cormorant Garamond";
+  margin: 7em auto;
+  padding: 3em 1em; }
   .about-wrapper p {
-    line-height: 1.8em;
-    font-family: "Playfair Display";
-    font-weight: 600; }
+    line-height: 2.5em;
+    font-weight: 500;
+    font-family: "Cormorant Garamond";
+    font-size: 1.6em; }
+
+/*==================================
+	WORK ELEMENTS
+====================================*/
+.work-block h1 {
+  font-family: "Cormorant Garamond";
+  font-weight: 600;
+  font-size: 1.5em;
+  text-transform: none;
+  margin-bottom: 2em; }
+.work-block img {
+  width: 1100px;
+  margin: 4em auto;
+  display: block; }
+.work-block .btn-work {
+  background: #527dc6;
+  color: white !important;
+  padding: 18px 30px;
+  border-radius: 60px;
+  margin: 4em auto;
+  max-width: 200px;
+  display: none;
+  clear: both; }
+  .work-block .btn-work:hover, .work-block .btn-work:active, .work-block .btn-work:active {
+    color: white;
+    background: #2863c7;
+    box-shadow: 0px 0px 60px 10px rgba(0, 0, 0, 0.15);
+    transition: all 200ms ease-in; }
 
 /*==================================
 	@fonts
