@@ -3,10 +3,20 @@
 	position:relative;
 	text-align: center;
 	font-size:1em;
-	font-family: $brandon-bold, $font-fallback;
+	font-family: $proxima-bold, $font-fallback;
 	margin: 2em auto;
 	text-align: center;
 	display: block;
 	letter-spacing: 0.1em;
 }
 
+.btn-hero-bg {
+	background: rgba(19,114,197,1);
+	background: -moz-linear-gradient(left, rgba(19,114,197,1) 0%, rgba(11,158,161,1) 47%, rgba(10,212,135,1) 72%, rgba(21,219,143,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(19,114,197,1)), color-stop(47%, rgba(11,158,161,1)), color-stop(72%, rgba(10,212,135,1)), color-stop(100%, rgba(21,219,143,1)));
+	background: -webkit-linear-gradient(left, rgba(19,114,197,1) 0%, rgba(11,158,161,1) 47%, rgba(10,212,135,1) 72%, rgba(21,219,143,1) 100%);
+	background: -o-linear-gradient(left, rgba(19,114,197,1) 0%, rgba(11,158,161,1) 47%, rgba(10,212,135,1) 72%, rgba(21,219,143,1) 100%);
+	background: -ms-linear-gradient(left, rgba(19,114,197,1) 0%, rgba(11,158,161,1) 47%, rgba(10,212,135,1) 72%, rgba(21,219,143,1) 100%);
+	background: linear-gradient(to right, rgba(19,114,197,1) 0%, rgba(11,158,161,1) 47%, rgba(10,212,135,1) 72%, rgba(21,219,143,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1372c5', endColorstr='#15db8f', GradientType=1 );
+}

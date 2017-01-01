@@ -19,7 +19,7 @@
     	- Mixins
     	- Variables
     - Modules
-    	- ...
+    	- 
 ==================================
 	DOCUMENT STRUCTURE
 ==================================
@@ -42,11 +42,21 @@
   position: relative;
   text-align: center;
   font-size: 1em;
-  font-family: "brandon_bold", sans-serif, Arial, Helvetica;
+  font-family: "proxima_bold", sans-serif, Arial, Helvetica;
   margin: 2em auto;
   text-align: center;
   display: block;
   letter-spacing: 0.1em; }
+
+.btn-hero-bg, .hero-wrapper .hero-info .btn-hero {
+  background: #1372c5;
+  background: -moz-linear-gradient(left, #1372c5 0%, #0b9ea1 47%, #0ad487 72%, #15db8f 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #1372c5), color-stop(47%, #0b9ea1), color-stop(72%, #0ad487), color-stop(100%, #15db8f));
+  background: -webkit-linear-gradient(left, #1372c5 0%, #0b9ea1 47%, #0ad487 72%, #15db8f 100%);
+  background: -o-linear-gradient(left, #1372c5 0%, #0b9ea1 47%, #0ad487 72%, #15db8f 100%);
+  background: -ms-linear-gradient(left, #1372c5 0%, #0b9ea1 47%, #0ad487 72%, #15db8f 100%);
+  background: linear-gradient(to right, #1372c5 0%, #0b9ea1 47%, #0ad487 72%, #15db8f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1372c5', endColorstr='#15db8f', GradientType=1 ); }
 
 /*==================================
 	CSS RESET
@@ -208,7 +218,8 @@ a:focus {
 
 /* Improve readability */
 a:hover, a:active {
-  outline: 0; }
+  outline: 0;
+  text-decoration: none; }
 
 ::selection {
   color: white; }
@@ -283,7 +294,7 @@ textarea {
   width: 100%; }
 
 /*==================================
-	BUILD ELEMENTS
+	GENERAL ELEMENTS
 ====================================*/
 .sitewrap {
   height: 100%;
@@ -293,18 +304,35 @@ textarea {
 	HERO ELEMENTS
 ====================================*/
 .hero-wrapper {
-  background: url("../img/hero_03.jpg");
+  background-image: url("../img/hero2.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  font-family: "brandon_bold";
+  font-family: "Playfair Display";
   height: 100%;
   width: 100%; }
+  .hero-wrapper nav {
+    text-align: right;
+    font-family: "proxima_bold";
+    float: right;
+    clear: both;
+    width: 100%;
+    margin: 70px; }
+    .hero-wrapper nav a {
+      color: white;
+      text-transform: uppercase;
+      padding: 10px;
+      margin: 20px;
+      text-decoration: none; }
+      .hero-wrapper nav a:last-child {
+        border: 3px solid white;
+        border-radius: 60px;
+        padding: 15px 30px; }
   .hero-wrapper .hero-info {
     text-align: center;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-65%);
     position: relative;
     color: white;
     max-width: 800px;
@@ -312,26 +340,32 @@ textarea {
     .hero-wrapper .hero-info h1 {
       margin-top: 0;
       color: white;
-      font-size: 1.85em; }
-    .hero-wrapper .hero-info .btn-more {
-      border: 2px solid white;
-      border-radius: 3px;
-      display: inline-block; }
-      .hero-wrapper .hero-info .btn-more:last-child {
-        margin-left: 5px;
-        background: white;
-        color: #222; }
+      font-family: "Playfair Display";
+      text-transform: none;
+      font-size: 2.6em;
+      line-height: 1.5em; }
+    .hero-wrapper .hero-info p {
+      font-size: 1.3em; }
+    .hero-wrapper .hero-info .btn-hero {
+      display: inline-block;
+      color: white;
+      padding: 18px 75px;
+      border-radius: 60px;
+      border: 0;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      box-shadow: 0px 0px 16px 9px rgba(0, 0, 0, 0.23); }
 
 /*==================================
 	ABOUT ELEMENTS
 ====================================*/
 .about-wrapper {
   max-width: 800px;
-  font-family: "brandon_bold";
+  font-family: "Playfair Display";
   margin: 7em auto; }
   .about-wrapper p {
     line-height: 1.8em;
-    font-family: "brandon_light";
+    font-family: "Playfair Display";
     font-weight: 600; }
 
 /*==================================
@@ -353,18 +387,6 @@ textarea {
   font-family: 'proxima_black';
   src: url("../fonts/proxima-nova/proxima_nova_alt_black-webfont.eot");
   src: url("../fonts/proxima-nova/proxima_nova_alt_black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima-nova/proxima_nova_alt_black-webfont.woff") format("woff"), url("../fonts/proxima-nova/proxima_nova_alt_black-webfont.ttf") format("truetype"), url("../fonts/proxima-nova/proxima_nova_alt_black-webfont.svg#proxima_nova_altblack") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'brandon_bold';
-  src: url("../fonts/brandon/brandon_bld-webfont.eot");
-  src: url("../fonts/brandon/brandon_bld-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon/brandon_bld-webfont.woff") format("woff"), url("../fonts/brandon/brandon_bld-webfont.ttf") format("truetype"), url("../fonts/brandon/brandon_bld-webfont.svg#brandon_bold") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'brandon_light';
-  src: url("../fonts/brandon/brandon_light-webfont.eot");
-  src: url("../fonts/brandon/brandon_light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon/brandon_light-webfont.woff") format("woff"), url("../fonts/brandon/brandon_light-webfont.ttf") format("truetype"), url("../fonts/brandon/brandon_light-webfont.svg#brandon_light") format("svg");
   font-weight: normal;
   font-style: normal; }
 
